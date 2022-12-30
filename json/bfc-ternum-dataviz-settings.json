@@ -2,35 +2,35 @@
   "charts": [
     {
       "title": { "fr": "REPARTITION PAR TYPES DE LIEU" },
+      "cols": 6,
+      "unit": { "fr": "lieu(x)" },
+      "aggregatebyfield": "code_typo",
+      "aggregationtype": "countitems",
+      "chartOptions": {
+        "chart": {
+          "type": "donut",
+          "height": 500
+        }
+      }
+    },
+    {
+      "title": { "fr": "REPARTITION PAR LABEL" },
+      "cols": 6,
+      "unit": { "fr": "lieu(x)" },
+      "aggregatebyfield": "code_label",
+      "aggregationtype": "countitems",
+      "chartOptions": {
+        "chart": {
+          "type": "donut",
+          "height": 500
+        }
+      }
+    },
+    {
+      "title": { "fr": "REPARTITION DES LIEUX PAR ACCOMPAGNEMENT" },
       "cols": 12,
       "unit": { "fr": "lieu(x)" },
-      "aggregatebyfield": "type_lieu",
-      "aggregationtype": "countitems",
-      "chartOptions": {
-        "chart": {
-          "type": "donut",
-          "height": 500
-        }
-      }
-    },
-    {
-      "title": { "fr": "REPARTITION PAR NATURE JURIDIQUE" },
-      "cols": 6,
-      "unit": { "fr": "lieu(x)" },
-      "aggregatebyfield": "nature_juridique",
-      "aggregationtype": "countitems",
-      "chartOptions": {
-        "chart": {
-          "type": "donut",
-          "height": 500
-        }
-      }
-    },
-    {
-      "title": { "fr": "REPARTITION DES LIEUX PAR NATURE JURIDIQUE" },
-      "cols": 6,
-      "unit": { "fr": "lieu(x)" },
-      "aggregatebyfield": "nature_juridique",
+      "aggregatebyfield": "code_accomp",
       "aggregationtype": "countitems",
       "chartOptions": {
         "chart": {
