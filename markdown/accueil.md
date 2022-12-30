@@ -66,11 +66,11 @@
     <div class="columns is-mobile is-centered">
       <div class="column is-two-thirds">
         <div class="has-text-left">
-          <p>
+          <p style="color: white !important;">
             Les lieux de médiation numérique sont des espaces partagés s’adaptant aux nouvelles attentes, pratiques et technologies et s’inscrivant dans une même démarche : favoriser la rencontre et l’échange entre personnes, intérêts et compétences, qui n’ont pas forcément vocation à se croiser.
           </p>
           <br>
-          <p>
+          <p style="color: white !important;">
             Ces lieux ont tous un objectif commun, mais chacun garde a sa particularité dans son fonctionnement et ses services proposés. 
           </p>
         </div>
@@ -80,76 +80,6 @@
     <br>
     <br>
   </div>
-
-
-
-  <section id="top" class="hero primary-bg">
-
-    <div
-      class="background columns is-centered " 
-      style="
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding:4em 0;
-        "
-      >
-
-      <div class="column is-8">
-
-       <!-- <div class="has-text-centered content is-horizontal-center">
-          <figure class="image img-medium is-inline-block">
-            <img src="https://raw.githubusercontent.com/co-demos/BFC-ternum/master/illustrations/fonds-mediation-1024x384.jpg" alt="Placeholder image">
-          </figure>
-        </div> -->
-
-        <form action="/recherche" method="GET" class="columns">
-
-          <div class="column is-9">
-
-            <div class="control has-icons-left is-large">
-
-              <input
-                type="search"
-                name="text"
-                class="input is-large"
-                placeholder="Cherchez un lieu de médiation numérique">
-              
-              <span class="icon is-left">
-                <i class="fas fa-search"></i>
-              </span>
-            </div>
-
-          </div>
-
-          <div class="column is-3 is-hidden-mobile">
-
-            <button class="button is-fullwidth is-primary is-primary-b is-outlined is-large" 
-              style="padding-left: 0;"
-              type="submit"
-              >
-              <span class="is-hidden-touch" style="padding-left:0.7em;">
-                Rechercher
-              </span>
-              <span class="icon is-hidden-desktop">
-                <i class="fas fa-search"></i>
-              </span>
-            </button>
-
-          </div>
-
-        </form>
-
-        <!-- <h3>
-          <span class="counter is-secondary">?</span>
-          <span class="text is-secondary">
-            projets déjà référencés
-          </span>
-        </h3> -->
-
-      </div>
-    </div>
-  </section>
 
   <section class="container">
 
