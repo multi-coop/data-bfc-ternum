@@ -24,7 +24,7 @@
 
       <!-- DATAMI WIDGET'S HTML BLOCK-->
       <datami-multi-files
-        title="Rhinocc - Inclusion et médiation numérique en Occitanie"
+        title="Ternum - Inclusion et médiation numérique en Occitanie"
         options='{
           "display": "horizontal"
         }'
@@ -32,10 +32,9 @@
         {
           "title": "Lieux de médiation numérique",
           "activate": true,
-          "localdev": false,
-          "gitfilelocal": "http://localhost:8800/statics/csv/geocoding/rhinocc-inclusion-dataset-geocoded.csv",
-          "gitfile_test": "https://github.com/multi-coop/data-rhinocc-inclusion/blob/main/csv/rhinocc-inclusion-dataset.csv",
-          "gitfile": "https://github.com/multi-coop/data-rhinocc-inclusion/blob/main/csv/geocoding/rhinocc-inclusion-dataset-geocoded.csv",
+          "localdev": true,
+          "gitfilelocal": "http://localhost:8800/statics/csv/bfc-ternum-dataset.csv",
+          "gitfile": "https://github.com/multi-coop/data-bfc-ternum/blob/main/csv/bfc-ternum-dataset.csv",
           "default-tab": true,
           "options": {
             "height": "500px",
@@ -67,14 +66,14 @@
               ]
             },
             "schema": {
-              "localdev": false,
-              "filelocal": "http://localhost:8800/statics/json/rhinocc-inclusion-schema.json",
-              "file": "https://github.com/multi-coop/data-rhinocc-inclusion/blob/main/json/rhinocc-inclusion-schema.json"
+              "localdev": true,
+              "filelocal": "http://localhost:8800/statics/json/bfc-ternum-schema.json",
+              "file": "https://github.com/multi-coop/data-bfc-ternum/blob/main/json/bfc-ternum-schema.json"
             },
             "fields-custom-properties": {
-              "localdev": false,
-              "filelocal": "http://localhost:8800/statics/json/rhinocc-inclusion-fields-custom-props.json",
-              "file": "https://github.com/multi-coop/data-rhinocc-inclusion/blob/main/json/rhinocc-inclusion-fields-custom-props.json"
+              "localdev": true,
+              "filelocal": "http://localhost:8800/statics/json/bfc-ternum-fields-custom-props.json",
+              "file": "https://github.com/multi-coop/data-bfc-ternum/blob/main/json/bfc-ternum-fields-custom-props.json"
             },
             "cardsview": {
               "activate": true,
@@ -238,9 +237,9 @@
             "datavizview": {
               "activate": true,
               "default": false,
-              "localdev": false,
-              "filelocal": "http://localhost:8800/statics/json/rhinocc-inclusion-dataviz-settings.json",
-              "file": "https://github.com/multi-coop/data-rhinocc-inclusion/blob/main/json/rhinocc-inclusion-dataviz-settings.json"
+              "localdev": true,
+              "filelocal": "http://localhost:8800/statics/json/bfc-ternum-dataviz-settings.json",
+              "file": "https://github.com/multi-coop/data-bfc-ternum/blob/main/json/bfc-ternum-dataviz-settings.json"
             },
             "mapview": {
               "activate": true,
@@ -251,9 +250,9 @@
                     "fr": "CARTOGRAPHIE"
                   },
                   "cols": 12,
-                  "localdev": false,
-                  "filelocal": "http://localhost:8800/statics/json/rhinocc-inclusion-map-settings.json",
-                  "file": "https://github.com/multi-coop/data-rhinocc-inclusion/blob/main/json/rhinocc-inclusion-map-settings.json"
+                  "localdev": true,
+                  "filelocal": "http://localhost:8800/statics/json/bfc-ternum-map-settings.json",
+                  "file": "https://github.com/multi-coop/data-bfc-ternum/blob/main/json/bfc-ternum-map-settings.json"
                 }
               ]
             }
@@ -264,9 +263,9 @@
           "title": "La démarche",
           "activate": true,
           "default-tab": false,
-          "localdev": false,
-          "gitfilelocal": "http://localhost:8800/statics/markdown/la-demarche.md",
-          "gitfile": "https://github.com/multi-coop/data-rhinocc-inclusion/blob/main/markdown/la-demarche.md",
+          "localdev": true,
+          "gitfilelocal": "http://localhost:8800/statics/markdown/accueil.md",
+          "gitfile": "https://github.com/multi-coop/data-bfc-ternum/blob/main/markdown/accueil.md",
           "onlypreview": true,
           "usertoken": ""
         },
@@ -274,9 +273,9 @@
           "title": "Les données",
           "activate": true,
           "default-tab": false,
-          "localdev": false,
+          "localdev": true,
           "gitfilelocal": "http://localhost:8800/statics/markdown/les-donnees.md",
-          "gitfile": "https://github.com/multi-coop/data-rhinocc-inclusion/blob/main/markdown/les-donnees.md",
+          "gitfile": "https://github.com/multi-coop/data-bfc-ternum/blob/main/markdown/les-donnees.md",
           "onlypreview": true,
           "usertoken": ""
         },
@@ -284,24 +283,10 @@
           "title": "Contribuer",
           "activate": true,
           "default-tab": false,
-          "localdev": false,
-          "gitfilelocal": "http://localhost:8800/statics/markdown/contribuer.md",
-          "gitfile": "https://github.com/multi-coop/data-rhinocc-inclusion/blob/main/markdown/contribuer.md",
+          "localdev": true,
+          "gitfilelocal": "http://localhost:8800/statics/markdown/mednum-bfc.md",
+          "gitfile": "https://github.com/multi-coop/data-bfc-ternum/blob/main/markdown/mednum-bfc.md",
           "onlypreview": true,
-          "usertoken": ""
-        },
-        {
-          "title": "Schéma des données",
-          "activate": true,
-          "default-tab": false,
-          "localdev": false,
-          "gitfilelocal": "http://localhost:8900/statics/json/inclusion-schema.json",
-          "gitfile": "https://github.com/multi-coop/data-inclusion-schema/blob/main/json/inclusion-schema.json",
-          "options": {
-            "defaultDepth": 2,
-            "allowKeyEdit": true
-          },
-          "onlypreview": false,
           "usertoken": ""
         }
       ]'
@@ -309,8 +294,8 @@
       ></datami-multi-files>
 
       <!-- DATAMI WIDGET'S APP.JS SCRIPT -->
-      <script src="https://datami-widget.multi.coop/js/app.js" type="text/javascript" defer></script>
-      <!-- <script src="https://preprod--datami-widget.multi.coop/js/app.js" type="text/javascript" defer></script> -->
+      <!-- <script src="https://datami-widget.multi.coop/js/app.js" type="text/javascript" defer></script> -->
+      <script src="https://preprod--datami-widget.multi.coop/js/app.js" type="text/javascript" defer></script>
       <!-- <script src="http://localhost:8080/js/app.js" type="text/javascript" defer></script> -->
 
     </div>
@@ -326,7 +311,7 @@
     <p id="page-credits" class="mt-6 has-text-centered has-text-grey">
       Un projet numérique en partenariat avec
       <a href="https://rhinocc.fr" target="_blank" class="has-text-grey is-underlined">
-        RHINOCC
+        TERNUM
       </a>
       <br>
       Codé par la coopérative numérique 
@@ -336,10 +321,10 @@
     </p>
     <!-- <p id="page-credits" class="my-6 is-flex is-align-items-center is-justify-content-center">
       <a href="https://rhinocc.fr" class="mr-5" target="_blank">
-        <img src="https://gitlab.com/multi-coop/data-rhinocc-inclusion/-/raw/main/images/rhinocc-logo.svg" alt="logo RHINOCC" style="height: 60px !important; width: auto !important">
+        <img src="https://gitlab.com/multi-coop/data-bfc-ternum/-/raw/main/images/rhinocc-logo.svg" alt="logo RHINOCC" style="height: 60px !important; width: auto !important">
       </a>
       <a href="https://multi.coop" class="" target="_blank">
-        <img src="https://gitlab.com/multi-coop/data-rhinocc-inclusion/-/raw/main/images/multi-logo.png" alt="logo MULTI" style="height: 50px !important; width: auto !important">
+        <img src="https://gitlab.com/multi-coop/data-bfc-ternum/-/raw/main/images/multi-logo.png" alt="logo MULTI" style="height: 50px !important; width: auto !important">
       </a>
     </p> -->
   </div>
