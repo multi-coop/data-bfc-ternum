@@ -250,17 +250,7 @@
           "label" : "départements" ,
           "layers" : [ "chorolayer-departements" ],
           "default_visible" : true
-        }, 
-        {
-          "label" : "EPCI" ,
-          "layers" : [ "chorolayer-epci" ],
-          "default_visible" : true
-        }, 
-        {
-          "label" : "QPV" ,
-          "layers" : [ "chorolayer-qpv" ],
-          "default_visible" : true
-        }, 
+        },
         {
           "label" : "heatmap" ,
           "layers" : [ "heatmap-layer" ],
