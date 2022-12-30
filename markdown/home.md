@@ -1,0 +1,235 @@
+<style>
+
+  .img-mini{
+    max-width: 120px;
+    height: auto;
+  }
+  .img-medium{
+    max-width: 250px;
+    height: auto;
+  }
+  .img-large{
+    max-width: 400px;
+    height: auto;
+  }
+  figure {
+    margin: auto;
+  }
+  .is-horizontal-center {
+    justify-content: center;
+  }
+
+  
+  .top-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:3em 0 3em 0 ;
+  }
+  .bfc-title {
+    margin-bottom : 0 !important;
+    padding: 1em 0 .2em 0;
+  }
+  .bfc-title-background{
+    background-image: url('https://raw.githubusercontent.com/co-demos/BFC-ternum/master/illustrations/fonds-mediation-1024x384.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: 3em;
+  }
+  .BFC-divider {
+    background-color: #ff4646;
+    height: 1px;
+  }
+
+  .div-padding{
+    margin: 0 3em 0 3em;
+  }
+
+</style>
+
+<div id="home">
+
+
+  <div class="top-section bfc-title-background has-text-white">
+    <br>
+
+    <div class="section-title-wrap">
+      <h1 class="title bfc-title is-1 has-text-centered has-text-white">
+        Cartographie des lieux de la médiation numérique 
+        <br>en Bourgogne-Franche-Comté
+      </h1>
+    </div>
+
+    <hr width="38px" class="BFC-divider">
+
+    <div class="columns is-mobile is-centered">
+      <div class="column is-two-thirds">
+        <div class="has-text-left">
+          <p>
+            Les lieux de médiation numérique sont des espaces partagés s’adaptant aux nouvelles attentes, pratiques et technologies et s’inscrivant dans une même démarche : favoriser la rencontre et l’échange entre personnes, intérêts et compétences, qui n’ont pas forcément vocation à se croiser.
+          </p>
+          <br>
+          <p>
+            Ces lieux ont tous un objectif commun, mais chacun garde a sa particularité dans son fonctionnement et ses services proposés. 
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+  </div>
+
+
+
+  <section id="top" class="hero primary-bg">
+
+    <div
+      class="background columns is-centered " 
+      style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:4em 0;
+        "
+      >
+
+      <div class="column is-8">
+
+       <!-- <div class="has-text-centered content is-horizontal-center">
+          <figure class="image img-medium is-inline-block">
+            <img src="https://raw.githubusercontent.com/co-demos/BFC-ternum/master/illustrations/fonds-mediation-1024x384.jpg" alt="Placeholder image">
+          </figure>
+        </div> -->
+
+        <form action="/recherche" method="GET" class="columns">
+
+          <div class="column is-9">
+
+            <div class="control has-icons-left is-large">
+
+              <input
+                type="search"
+                name="text"
+                class="input is-large"
+                placeholder="Cherchez un lieu de médiation numérique">
+              
+              <span class="icon is-left">
+                <i class="fas fa-search"></i>
+              </span>
+            </div>
+
+          </div>
+
+          <div class="column is-3 is-hidden-mobile">
+
+            <button class="button is-fullwidth is-primary is-primary-b is-outlined is-large" 
+              style="padding-left: 0;"
+              type="submit"
+              >
+              <span class="is-hidden-touch" style="padding-left:0.7em;">
+                Rechercher
+              </span>
+              <span class="icon is-hidden-desktop">
+                <i class="fas fa-search"></i>
+              </span>
+            </button>
+
+          </div>
+
+        </form>
+
+        <!-- <h3>
+          <span class="counter is-secondary">?</span>
+          <span class="text is-secondary">
+            projets déjà référencés
+          </span>
+        </h3> -->
+
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+
+    <div class="columns is-centered">
+      <div class="column is-8 content">
+        
+       <div class="has-text-centered content is-horizontal-center">
+          <figure class="image is-inline-block">
+            <!-- <img src="https://raw.githubusercontent.com/co-demos/BFC-ternum/master/logos/mednumbfc-logo-1.png" alt="Placeholder image"> -->
+            <!-- <img src="https://raw.githubusercontent.com/co-demos/BFC-ternum/master/logos/logo_terrnum_horiz_fb_trimmed.png" alt="Placeholder image"> -->
+            <img src="https://raw.githubusercontent.com/co-demos/BFC-ternum/master/logos/bandeau-mednumbfc@3x.png" alt="Placeholder image">
+          </figure>
+        </div>
+
+        <p>
+MedNum BFC recense les lieux de médiation numérique en Bourgogne-Franche-Comté. Ces lieux sont cartographiés, mis en ligne et accessibles à tous.
+        </p>
+        <p>
+          <b>Une cartographie en ligne pour quoi ?</b>
+        </p>
+        <p>
+Elle permet ainsi de favoriser le maillage du réseau des acteurs de la médiation numérique, de faciliter l'orientation des différents publics vers les structures adéquates et d'augmenter la visibilité des acteurs de la médiation numérique au niveau régional.
+        </p>
+        <p>
+L’enjeu est également celui du pilotage territorial, l’analyse des forces et fragilités du territoire, la mutualisation des équipements, ...
+        </p>
+       <p>
+          <b>Qu'y trouve-t-on ?</b>
+        </p>
+        <p>
+Les coordonnées des structures répertoriées, qu’elles soient totalement dédiées au numérique ou non, leurs offres de service, les heures d’ouvertures, le type de matériel que l’on peut y trouver, la tarification.
+        </p>
+        <p>
+          <b>Une cartographie pour qui ?</b>
+        </p>
+        <p>
+Pour ceux qui cherchent un lieu afin de se former aux usages du numériques, avoir accès à une connexion internet, du matériel (ordinateurs, imprimantes, scanner, imprimante 3 D…)
+        </p>
+         <p>
+Pour ceux qui orientent les publics éloignés du numérique (par l’usage ou l’accès au matériel) : centres sociaux, mairies, travailleurs sociaux, conseillers en insertion…sur les structures adéquates.
+        </p>
+        <p>
+Pour les structures de la médiation numériques qui souhaitent connaitre le réseau de la médiation numérique en Bourgogne-Franche-Comté, faire des échanges de pratiques, mutualiser leurs compétences, savoirs faire, matériels, collaborer sur des projet collectifs…
+        </p>
+        <p>
+        <b>Des données à jour</b>
+        </p>
+        <p>
+C’est un outil au service des acteurs de la médiation numérique et une cartographie n'a de sens que si les informations qui y sont présentes sont à jour. Vous êtes donc invités à contribuer à sa mise à jour et à son fonctionnement, en accédant au 
+<a 
+  href="https://mednum-bfc.fr/maj-lieu/" 
+  title="Je veux référencer ma structure sur la cartographie"  
+  target="_blank"
+  class="link-underlined"
+  >
+formulaire en ligne pour déclarer votre lieu de médiation numérique ou mettre à jour les informations le concernant.
+</a>
+        </p>
+
+
+
+        <br>
+        <br>
+
+        <div class="has-text-centered content is-horizontal-center">
+          <figure class="image is-inline-block">
+            <img src="https://raw.githubusercontent.com/co-demos/BFC-ternum/master/illustrations/soutiens-fonds-blanc.png" alt="Placeholder image">
+          </figure>
+        </div>
+
+
+        <br>
+        <br>
+        
+      </div>
+    </div>
+  </section>
+
+
+  <br>
+  <br>
+
+</div>
