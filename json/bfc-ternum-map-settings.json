@@ -5,15 +5,15 @@
     "url"              : "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png",
     "attribution"      : "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
     "subdomains"       : "abcd",
-    "center"           : [2.07, 43.9],
-    "zoom"             : 6.75,
+    "center"           : [5.05, 47.7],
+    "zoom"             : 6.9,
     "maxZoom"          : 18,
     "minZoom"          : 2,
     "useMarkerCluster" : true,
 
     "item_geo_fields"   : {
-      "latitude" : "BAN_latitude",
-      "longitude": "BAN_longitude"
+      "latitude" : "lat",
+      "longitude": "lon"
     },
 
     "item_marker"       : "map-marker",
@@ -48,7 +48,7 @@
         "popup_config"        : {
           "action" : "mousemove",
           "fields_settings": {
-            "nom" :       { "position": "main_title", "prefix" : null, "suffix" : null, "class": "is-size-6 has-text-weight-semibold" },
+            "nom_structure" :       { "position": "main_title", "prefix" : null, "suffix" : null, "class": "is-size-6 has-text-weight-semibold" },
             "_datami_" :  { "position": "info",       "prefix" : "(cliquez pour + d'infos)", "suffix" : null, "class": "has-text-centered has-text-weight-light" }
           }
         },
@@ -60,65 +60,20 @@
 
         "circle_color": [
           "match",
-          ["get", "nature_juridique"],
-          "Association",
-          "#a6cee3",
-          "Entreprise",
-          "#1f78b4",
-          "SAS",
-          "#1f78b4",
-          "SARL",
-          "#1f78b4",
-          "SCIC",
-          "#1f78b4",
-          "SCIC SARL",
-          "#1f78b4",
-          "SARL en SCIC",
-          "#1f78b4",
-          "SASU",
-          "#1f78b4",
-          "Micro-Entrpreneur",
-          "#1f78b4",
-          "EPCI",
-          "#b2df8a",
-          "syndicat mixte",
-          "#b2df8a",
-          "Communauté de commune",
-          "#33a02c",
-          "Collectivité territoriale",
-          "#33a02c",
-          "#e69c75"
-        ],
-        "circle_color_activated": [
-          "match",
-          ["get", "nature_juridique"],
-          "Association",
-          "#a6cee3",
-          "Entreprise",
-          "#1f78b4",
-          "SAS",
-          "#1f78b4",
-          "SARL",
-          "#1f78b4",
-          "SCIC",
-          "#1f78b4",
-          "SCIC SARL",
-          "#1f78b4",
-          "SARL en SCIC",
-          "#1f78b4",
-          "SASU",
-          "#1f78b4",
-          "Micro-Entrpreneur",
-          "#1f78b4",
-          "EPCI",
-          "#b2df8a",
-          "syndicat mixte",
-          "#b2df8a",
-          "Communauté de commune",
-          "#33a02c",
-          "Collectivité territoriale",
-          "#33a02c",
-          "#e69c75"
+          ["get", "code_typo"],
+          "M",
+          "#f58231",
+          "I",
+          "#ffe119",
+          "T",
+          "#3cb44b",
+          "O",
+          "#4363d8",
+          "F",
+          "#911eb4",
+          "TL",
+          "#f032e6",
+          "#a9a9a9"
         ],
         "circle_stroke_color" : "#FFFFFF",
         "circle_opacity"      : 0.9
@@ -177,7 +132,7 @@
         "popup_config"        : {
           "action" : "mousemove",
           "fields_settings": {
-            "nom" :       { "position": "main_title", "prefix" : null, "suffix" : null, "class": "is-size-6 has-text-weight-semibold" },
+            "nom_structure" :       { "position": "main_title", "prefix" : null, "suffix" : null, "class": "is-size-6 has-text-weight-semibold" },
             "_datami_" :  { "position": "info",       "prefix" : "(cliquez pour + d'infos)", "suffix" : null, "class": "has-text-centered has-text-weight-light" }
           }
         },
@@ -215,7 +170,7 @@
             "max_zoom" : 9,
             "min_zoom" : 0,
 
-            "source_url" : "https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/regions/occitanie/departements-occitanie.geojson", 
+            "source_url" : "https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/regions/bourgogne-franche-comte/departements-bourgogne-franche-comte.geojson", 
             "update_src_from_previous_layer" : false,
 
             "need_aggregation" : true,
@@ -256,86 +211,6 @@
                 { "value" : "10 lieux",   "color" : "#42b2a3"},
                 { "value" : "1 lieu",  "color" : "#6cc3b7"},
                 { "value" : "0 lieu",   "color" : "#fbf2ed"}
-              ]
-            }
-          },
-          { "_COMMENT": "### OCCITANIE - EPCI",
-            "is_activated" : true,
-            "source_id" : "chorosource-epci",
-            "layer_id"  : "chorolayer-epci",
-            "is_default_visible" : true,
-            "max_zoom" : 12,
-            "min_zoom" : 9,
-
-            "source_url" : "https://raw.githubusercontent.com/co-demos/rhinocc-carto/master/data/datasets_src/EPCI_4DPT.geojson", 
-            "update_src_from_previous_layer" : false,
-            "need_aggregation" : false,
-            "polygon_prop_id" : "code_epci",
-            "join_polygon_id_to_field"  : "departement",
-            "agregated_data_field"      : "count_dep",
-            "fill_color": "transparent",
-            "fill_opacity"        : 0.9,
-            "fill_outline_color"  : "#e69c75",
-            "has_popup" : false, 
-            "popup_config" : {
-              "action" : "mousemove",
-              "fields_settings": {
-                "nom" :        { "position": "title",      "prefix" : null,       "suffix" : null },
-                "code" :       { "position": "title_post", "prefix" : " (",       "suffix" : ")" },
-                "count_dep" :  { "position": "value",      "prefix" : "total : ", "suffix" : " organisations" }
-              }
-            },
-            "legend" : {
-              "position" : "bottom-right", 
-              "title" : "Tiers-lieux / EPCI",
-              "scales" : [
-                { "value" : ">150 lieux", "color" : "#106268"},
-                { "value" : "100 lieux",  "color" : "#10685c"},
-                { "value" : "50 lieux",  "color" : "#158b7b"},
-                { "value" : "25 lieux",  "color" : "#18a28f"},
-                { "value" : "10 lieux",   "color" : "#42b2a3"},
-                { "value" : "1 lieu",   "color" : "#6cc3b7"},
-                { "value" : "0 lieu",    "color" : "#fbf2ed"}
-              ]
-            }
-          },
-          { "_COMMENT": "### OCCITANIE - QPV",
-            "is_activated" : true,
-            "source_id" : "chorosource-qpv",
-            "layer_id"  : "chorolayer-qpv",
-            "is_default_visible" : true,
-            "max_zoom" : 15,
-            "min_zoom" : 0,
-
-            "source_url" : "https://raw.githubusercontent.com/co-demos/rhinocc-carto/master/data/datasets_src/QPV_4DPT.geojson", 
-            "update_src_from_previous_layer" : false,
-            "need_aggregation" : false,
-            "polygon_prop_id" : "objectid",
-            "join_polygon_id_to_field"  : "departement",
-            "agregated_data_field"      : "count_dep",
-            "fill_color": "#feb24c",
-            "fill_opacity"        : 0.8,
-            "fill_outline_color"  : "#fd8d3c",
-            "has_popup" : false, 
-            "popup_config" : {
-              "action" : "mousemove",
-              "fields_settings": {
-                "nom" :        { "position": "title",      "prefix" : null,       "suffix" : null },
-                "code" :       { "position": "title_post", "prefix" : " (",       "suffix" : ")" },
-                "count_dep" :  { "position": "value",      "prefix" : "total : ", "suffix" : " organisations" }
-              }
-            },
-            "legend" : {
-              "position" : "bottom-right", 
-              "title" : "Tiers-lieux / EPCI",
-              "scales" : [
-                { "value" : ">150 lieux", "color" : "#106268"},
-                { "value" : "100 lieux",  "color" : "#10685c"},
-                { "value" : "50 lieux",  "color" : "#158b7b"},
-                { "value" : "25 lieux",  "color" : "#18a28f"},
-                { "value" : "10 lieux",   "color" : "#42b2a3"},
-                { "value" : "1 lieu",   "color" : "#6cc3b7"},
-                { "value" : "0 lieu",    "color" : "#fbf2ed"}
               ]
             }
           }

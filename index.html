@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="icon" href="https://gitlab.com/multi-coop/datami/-/raw/main/public/logo-DATAMI-favicon.ico">
-  <title>RHINOCC</title>
+  <title>TERNUM</title>
 </head>
 
 <body style="background-color: white; padding: 1em;">
@@ -15,7 +15,7 @@
       Please enable it to continue.</strong>
   </noscript>
   
-  <div class="container has-text-dark">
+  <div class="has-text-dark">
 
     <div style="background-color: white; margin: 1em;">
 
@@ -44,23 +44,19 @@
               "activate": true,
               "filterfields": [
                 {
-                  "name": "codes_publics",
+                  "name": "departement",
                   "filtering": "OR"
                 },
                 {
-                  "name": "codes_types_mediations",
-                  "filtering": "OR"
-                },
-                {
-                  "name": "type_lieu",
-                  "filtering": "OR"
-                },
-                {
-                  "name": "nature_juridique",
+                  "name": "code_typo",
                   "filtering": "OR"
                 },
                 {
                   "name": "code_label",
+                  "filtering": "OR"
+                },
+                {
+                  "name": "code_accomp",
                   "filtering": "OR"
                 }
               ]
@@ -82,134 +78,127 @@
             "cardsdetail": true,
             "cardssettings": {
               "mini": {
-                "nom": {
+                "nom_structure": {
                   "position": "title"
                 },
-                "adresse_full": {
+                "adresse": {
+                  "position": "adress"
+                },
+                "ville": {
                   "position": "adress"
                 },
                 "departement_": {
                   "position": "tags",
                   "prefix": "Département : "
                 },
-                "nature_juridique": {
+                "code_typo": {
                   "position": "tags",
-                  "prefix": "Nature juridique : "
-                },
-                "type_lieu": {
-                  "position": "subtitle"
+                  "prefix": "Typologie : "
                 },
                 "code_label": {
                   "position": "tags",
-                  "prefix": "Label : "
+                  "prefix": "Label(s) : "
                 },
-                "codes_publics": {
+                "code_accomp": {
                   "position": "tags",
-                  "prefix": "Publics : "
+                  "prefix": "Accompagnement : "
                 }
               },
               "detail": {
-                "nom": {
+                "nom_structure": {
                   "position": "title"
                 },
-                "adresse_full": {
+                "adresse": {
+                  "position": "adress"
+                },
+                "ville": {
                   "position": "adress"
                 },
                 "departement": {
                   "position": "tags_top",
                   "block_title": "Département"
                 },
-                "lundi": {
+                "lundi matin": {
                   "position": "infos",
                   "block_title": "Horaires",
                   "note": "templated"
                 },
-                "nature_juridique": {
+                "code_typo": {
                   "position": "tags_top",
-                  "block_title": "Nature juridique",
-                  "right": true
-                },
-                "type_lieu": {
-                  "position": "tags_top",
-                  "block_title": "Type de Lieu",
-                  "right": true
-                },
-                "codes_publics": {
-                  "position": "tags_top",
-                  "block_title": "Types de publics",
-                  "right": true
-                },
-                "codes_types_mediations": {
-                  "position": "tags_top",
-                  "block_title": "Types de médiation",
+                  "block_title": "Typologie",
                   "right": true
                 },
                 "code_label": {
-                  "position": "tags",
-                  "block_title": "Label",
+                  "position": "tags_top",
+                  "block_title": "Label(s)",
                   "right": true
                 },
-                "tel_structure": {
+                "code_accomp": {
+                  "position": "tags_top",
+                  "block_title": "Modalités d&lsquo;accompagnement",
+                  "right": true
+                },
+                "contact_tel": {
                   "position": "description",
                   "block_title": "Téléphone"
                 },
-                "email_structure": {
+                "contact_email": {
                   "position": "links",
                   "block_title": "Email"
                 },
-                "site_internet": {
+                "url_lieu": {
                   "position": "links",
                   "block_title": "Site internet"
                 },
-                "date_maj": {
+                "mise_a_jour": {
                   "position": "infos",
                   "prefix": "Date de mise à jour :",
                   "right": true
                 }
               },
               "templates": {
-                "lundi": {
+                "lundi matin": {
                   "use_on_mini": true,
                   "use_on_detail": true,
                   "paragraphs": [
                     {
                       "text": {
-                        "fr": "Lundi : &#123;&#123; lundi &#125;&#125;"
+                        "fr": "Lundi matin &#123;&#123; lundi matin &#125;&#125; / après-midi &#123;&#123; lundi après-midi &#125;&#125;"
                       }
                     },
                     {
                       "text": {
-                        "fr": "Mardi : &#123;&#123; mardi &#125;&#125;"
+                        "fr": "Mardi matin &#123;&#123; mardi matin &#125;&#125; / après-midi &#123;&#123; mardi après-midi &#125;&#125;"
                       }
                     },
                     {
                       "text": {
-                        "fr": "Mercredi : &#123;&#123; mercredi &#125;&#125;"
+                        "fr": "Mercredi matin &#123;&#123; mercredi matin &#125;&#125; / après-midi &#123;&#123; mercredi après-midi &#125;&#125;"
                       }
                     },
                     {
                       "text": {
-                        "fr": "Jeudi : &#123;&#123; jeudi &#125;&#125;"
+                        "fr": "Jeudi matin &#123;&#123; jeudi matin &#125;&#125; / après-midi &#123;&#123; jeudi après-midi &#125;&#125;"
                       }
                     },
                     {
                       "text": {
-                        "fr": "Vendredi : &#123;&#123; vendredi &#125;&#125;"
+                        "fr": "Vendredi matin &#123;&#123; vendredi matin &#125;&#125; / après-midi &#123;&#123; vendredi après-midi &#125;&#125;"
                       }
                     },
                     {
                       "text": {
-                        "fr": "Samedi : &#123;&#123; samedi &#125;&#125;"
+                        "fr": "Samedi matin &#123;&#123; samedi matin &#125;&#125; / après-midi &#123;&#123; samedi après-midi &#125;&#125;"
                       }
                     },
                     {
                       "text": {
-                        "fr": "Dimanche : &#123;&#123; dimanche &#125;&#125;"
+                        "fr": "Dimanche matin &#123;&#123; dimanche matin &#125;&#125; / après-midi &#123;&#123; dimanche après-midi &#125;&#125;"
                       }
                     },
                     {
                       "text": {
-                        "fr": "Plus d‘infos en cliquant ici : ~~ site_internet ~~"
+                        "fr": "Plus d&lsquo;infos en cliquant ici : ~~ url_lieu ~~"
                       }
                     }
                   ]
@@ -223,8 +212,8 @@
                   "maxZoom": 18,
                   "minZoom": 2,
                   "item_geo_fields": {
-                    "latitude": "BAN_latitude",
-                    "longitude": "BAN_longitude"
+                    "latitude": "lat",
+                    "longitude": "lon"
                   },
                   "zoom_item": 13,
                   "marker_icon": "map-marker",
@@ -295,8 +284,8 @@
 
       <!-- DATAMI WIDGET'S APP.JS SCRIPT -->
       <!-- <script src="https://datami-widget.multi.coop/js/app.js" type="text/javascript" defer></script> -->
-      <script src="https://preprod--datami-widget.multi.coop/js/app.js" type="text/javascript" defer></script>
-      <!-- <script src="http://localhost:8080/js/app.js" type="text/javascript" defer></script> -->
+      <!-- <script src="https://preprod--datami-widget.netlify.app/js/app.js" type="text/javascript" defer></script> -->
+      <script src="http://localhost:8080/js/app.js" type="text/javascript" defer></script>
 
     </div>
 
@@ -310,7 +299,7 @@
 
     <p id="page-credits" class="mt-6 has-text-centered has-text-grey">
       Un projet numérique en partenariat avec
-      <a href="https://rhinocc.fr" target="_blank" class="has-text-grey is-underlined">
+      <a href="https://www.ternum-bfc.fr" target="_blank" class="has-text-grey is-underlined">
         TERNUM
       </a>
       <br>
@@ -319,14 +308,6 @@
         multi
       </a>
     </p>
-    <!-- <p id="page-credits" class="my-6 is-flex is-align-items-center is-justify-content-center">
-      <a href="https://rhinocc.fr" class="mr-5" target="_blank">
-        <img src="https://gitlab.com/multi-coop/data-bfc-ternum/-/raw/main/images/rhinocc-logo.svg" alt="logo RHINOCC" style="height: 60px !important; width: auto !important">
-      </a>
-      <a href="https://multi.coop" class="" target="_blank">
-        <img src="https://gitlab.com/multi-coop/data-bfc-ternum/-/raw/main/images/multi-logo.png" alt="logo MULTI" style="height: 50px !important; width: auto !important">
-      </a>
-    </p> -->
   </div>
 </body>
 

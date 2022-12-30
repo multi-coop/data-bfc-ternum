@@ -1,255 +1,149 @@
 {
   "fields": [
     {
-      "name": "n_ref",
-      "type": "string",
-      "title": "N° ref"
+      "name": "bfc_id",
+      "title": "identifiant BFC",
+      "type": "string"
     },
     {
-      "name": "statut_infos",
-      "type": "string",
-      "title": "Statut"
+      "name": "mise_a_jour",
+      "title": "Date de mise à jour",
+      "type": "string"
     },
     {
-      "name": "departement",
-      "type": "string",
-      "title": "Département"
+      "name": "lon",
+      "title": "Longitude",
+      "type": "number"
     },
     {
-      "name": "ville",
-      "type": "string",
-      "title": "Ville"
-    },
-    {
-      "name": "code_commune",
-      "type": "string",
-      "title": "Code commune"
-    },
-    {
-      "name": "nom",
-      "type": "string",
-      "title": "Nom du lieu"
-    },
-    {
-      "name": "structure_porteuse",
-      "type": "string",
-      "title": "Structure porteuse"
-    },
-    {
-      "name": "code_postal",
-      "type": "string",
-      "title": "Code postal"
+      "name": "lat",
+      "title": "Latitude",
+      "type": "number"
     },
     {
       "name": "adresse",
-      "type": "string",
-      "title": "Adresse"
+      "title": "Adresse",
+      "type": "string"
     },
     {
-      "name": "adresse_suite",
-      "type": "string",
-      "title": "Adresse"
+      "name": "code_postal",
+      "title": "Code postal",
+      "type": "string"
     },
     {
-      "name": "adresse_full",
-      "type": "string",
-      "title": "Adresse"
+      "name": "ville",
+      "title": "Ville",
+      "type": "string"
     },
     {
-      "name": "nature_juridique",
-      "type": "string",
-      "title": "Nature juridique"
+      "name": "departement",
+      "title": "Département",
+      "type": "string"
     },
     {
-      "name": "type_lieu",
-      "type": "string",
-      "title": "Type de lieu"
+      "name": "nom_structure",
+      "title": "Nom de la structure",
+      "type": "string"
     },
     {
-      "name": "rattachement",
-      "type": "string",
-      "title": "Rattachement"
+      "name": "url_lieu",
+      "title": "SIte internet",
+      "type": "string"
     },
     {
-      "name": "tel_structure",
-      "type": "string",
-      "title": "Téléphone"
-    },
-    {
-      "name": "email_structure",
-      "type": "string",
+      "name": "contact_email",
       "title": "Email",
-      "format": "uri"
-    },
-    {
-      "name": "site_internet",
-      "type": "string",
-      "title": "Site web",
-      "format": "uri"
-    },
-    {
-      "name": "lundi",
       "type": "string"
     },
     {
-      "name": "mardi",
+      "name": "contact_tel",
+      "title": "Téléphone",
       "type": "string"
     },
     {
-      "name": "mercredi",
-      "type": "string"
-    },
-    {
-      "name": "jeudi",
-      "type": "string"
-    },
-    {
-      "name": "vendredi",
-      "type": "string"
-    },
-    {
-      "name": "samedi",
-      "type": "string"
-    },
-    {
-      "name": "dimanche",
-      "type": "string"
-    },
-    {
-      "name": "date_maj",
-      "type": "string"
-    },
-    {
-      "name": "public_toutes_actions",
-      "type": "string"
-    },
-    {
-      "name": "conditions_acces_toutes_actions",
-      "type": "string"
-    },
-    {
-      "name": "type_mediation_1",
-      "type": "string"
-    },
-    {
-      "name": "public_si_different_1",
-      "type": "string"
-    },
-    {
-      "name": "conditions_acces_si_diff_1",
-      "type": "string"
-    },
-    {
-      "name": "presta_mediation_1",
-      "type": "string"
-    },
-    {
-      "name": "type_mediation_2",
-      "type": "string"
-    },
-    {
-      "name": "public_si_different_2",
-      "type": "string"
-    },
-    {
-      "name": "conditions_acces_si_diff_2",
-      "type": "string"
-    },
-    {
-      "name": "presta_mediation_2",
-      "type": "string"
-    },
-    {
-      "name": "type_mediation_3",
-      "type": "string"
-    },
-    {
-      "name": "public_si_different_3",
-      "type": "string"
-    },
-    {
-      "name": "conditions_acces_si_diff_3",
-      "type": "string"
-    },
-    {
-      "name": "presta_mediation_3",
-      "type": "string"
-    },
-    {
-      "name": "type_mediation_4",
-      "type": "string"
-    },
-    {
-      "name": "public_si_different_4",
-      "type": "string"
-    },
-    {
-      "name": "conditions_acces_si_diff_4",
-      "type": "string"
-    },
-    {
-      "name": "presta_mediation_4",
-      "type": "string"
-    },
-    {
-      "name": "type_mediation_5",
-      "type": "string"
-    },
-    {
-      "name": "public_si_different_5",
-      "type": "string"
-    },
-    {
-      "name": "conditions_acces_si_diff_5",
-      "type": "string"
-    },
-    {
-      "name": "presta_mediation_5",
+      "name": "code_typo",
+      "title": "Typologie",
       "type": "string"
     },
     {
       "name": "code_label",
-      "type": "string",
-      "title": "Label"
-    },
-    {
-      "name": "wifi",
-      "type": "boolean"
-    },
-    {
-      "name": "precisions",
+      "title": "Label",
       "type": "string"
     },
     {
-      "name": "codes_types_mediations",
-      "type": "string",
-      "title": "Type de médiation"
+      "name": "code_accomp",
+      "title": "Accompagnement",
+      "type": "string"
     },
     {
-      "name": "codes_publics",
-      "type": "string",
-      "title": "Publics"
+      "name": "lundi matin",
+      "title": "Horaire lundi matin",
+      "type": "string"
     },
     {
-      "name": "codes_thematiques",
-      "type": "string",
-      "title": "Thématiques"
+      "name": "lundi après-midi",
+      "title": "Horaire lundi après-midi",
+      "type": "string"
     },
     {
-      "name": "lat",
-      "type": "number"
+      "name": "mardi matin",
+      "title": "Horaire mardi matin",
+      "type": "string"
     },
     {
-      "name": "lon",
-      "type": "number"
+      "name": "mardi après-midi",
+      "title": "Horaire mardi après-midi",
+      "type": "string"
     },
     {
-      "name": "BAN_latitude",
-      "type": "number"
+      "name": "mercredi matin",
+      "title": "Horaire mercredi matin",
+      "type": "string"
     },
     {
-      "name": "BAN_longitude",
-      "type": "number"
+      "name": "mercredi après-midi",
+      "title": "Horaire mercredi après-midi",
+      "type": "string"
+    },
+    {
+      "name": "jeudi matin",
+      "title": "Horaire jeudi matin",
+      "type": "string"
+    },
+    {
+      "name": "jeudi après-midi",
+      "title": "Horaire jeudi après-midi",
+      "type": "string"
+    },
+    {
+      "name": "vendredi matin",
+      "title": "Horaire vendredi matin",
+      "type": "string"
+    },
+    {
+      "name": "vendredi après-midi",
+      "title": "Horaire vendredi après-midi",
+      "type": "string"
+    },
+    {
+      "name": "samedi matin",
+      "title": "Horaire samedi matin",
+      "type": "string"
+    },
+    {
+      "name": "samedi après-midi",
+      "title": "Horaire samedi après-midi",
+      "type": "string"
+    },
+    {
+      "name": "dimanche matin",
+      "title": "Horaire dimanche matin",
+      "type": "string"
+    },
+    {
+      "name": "dimanche après-midi",
+      "title": "Horaire dimanche après-midi",
+      "type": "string"
     }
   ]
 }

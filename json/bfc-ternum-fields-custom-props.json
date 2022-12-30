@@ -1,308 +1,222 @@
 {
   "fields": [
     {
-      "name": "n_ref",
-      "title": "Identifiant",
-      "description": "Identifiant unique",
-      "locked": true
+      "name": "bfc_id"
     },
     {
-      "name": "nom",
-      "sticky": true,
-      "primaryKey": true
+      "name": "mise_a_jour"
     },
     {
-      "name": "adresse",
-      "subtype": "longtext",
-      "maxLength": 15
+      "name": "lon",
+      "subtype": "geopoint"
     },
     {
-      "name": "adresse_full",
-      "subtype": "longtext",
-      "maxLength": 15
+      "name": "lat",
+      "subtype": "geopoint"
     },
     {
-      "name": "precisions",
-      "subtype": "longtext",
-      "maxLength": 15
+      "name": "adresse"
     },
     {
-      "name": "email_structure",
-      "subtype": "email"
+      "name": "code_postal"
     },
     {
-      "name": "site_internet",
-      "subtype": "link"
+      "name": "ville"
     },
     {
       "name": "departement",
       "subtype": "tag",
+      "bgColor": "#F0BE86",
       "definitions": [
         {
-          "value": "09",
-          "label": "Ariège"
+          "value": "21",
+          "label": "Côte-d'Or"
         },
         {
-          "value": "11",
-          "label": "Aude"
+          "value": "25",
+          "label": "Doubs"
         },
         {
-          "value": "12",
-          "label": "Aveyron"
+          "value": "39",
+          "label": "Jura"
         },
         {
-          "value": "30",
-          "label": "Gard"
+          "value": "58",
+          "label": "Nièvre"
         },
         {
-          "value": "31",
-          "label": "Haute-Garonne"
+          "value": "70",
+          "label": "Haute-Saône"
         },
         {
-          "value": "32",
-          "label": "Gers"
+          "value": "71",
+          "label": "Saône-et-Loire"
         },
         {
-          "value": "34",
-          "label": "Hérault"
+          "value": "89",
+          "label": "Yonne"
         },
         {
-          "value": "46",
-          "label": "Lot"
-        },
-        {
-          "value": "48",
-          "label": "Lozère"
-        },
-        {
-          "value": "65",
-          "label": "Hautes-Pyrénées"
-        },
-        {
-          "value": "66",
-          "label": "Pyrénées-Orientales"
-        },
-        {
-          "value": "81",
-          "label": "Tarn"
-        },
-        {
-          "value": "82",
-          "label": "Tarn-et-Garonne"
+          "value": "90",
+          "label": "Territoire de Belfort"
         }
-      ],
-      "foreignKey_": {
-        "activate": false,
-        "ressource": "https://github.com/multi-coop/gitribute-content-test/blob/main/data/csv/odf/ODF-Observatoire-departements-regions.csv",
-        "ressourceOptions": {
-          "separator": ","
+      ]
+    },
+    {
+      "name": "nom_structure"
+    },
+    {
+      "name": "url_lieu",
+      "subtype": "link"
+    },
+    {
+      "name": "contact_email",
+      "subtype": "email"
+    },
+    {
+      "name": "contact_tel"
+    },
+    {
+      "name": "code_typo",
+      "subtype": "tags",
+      "bgColor": "#F0BE86",
+      "tagSeparator": "-",
+      "definitions": [
+        {
+          "value": "M",
+          "label": "Lieux de médiation publique"
         },
-        "fields": "depcode",
-        "returnFields": [
-          "Département",
-          "région"
-        ]
-      }
-    },
-    {
-      "name": "statut_infos",
-      "hide": true
-    },
-    {
-      "name": "nature_juridique",
-      "title": "Nature juridique",
-      "subtype": "tag"
-    },
-    {
-      "name": "type_lieu",
-      "title": "Type de lieu",
-      "subtype": "tag"
+        {
+          "value": "I",
+          "label": "Lieux d’information et d’accès aux droits"
+        },
+        {
+          "value": "T",
+          "label": "Lieux de travail et de collaboration"
+        },
+        {
+          "value": "O",
+          "label": "Lieux de formation"
+        },
+        {
+          "value": "F",
+          "label": "Lieux de médiation et de fabrication"
+        },
+        {
+          "value": "TL",
+          "label": "Tiers-lieux"
+        }
+      ]
     },
     {
       "name": "code_label",
-      "subtype": "tag",
-      "bgColor": "red",
+      "subtype": "tags",
+      "bgColor": "#F0BE86",
+      "tagSeparator": "-",
       "definitions": [
         {
           "value": "APTIC",
           "label": "APTIC"
         },
         {
+          "value": "CTL",
+          "label": "Charte régionale des Tiers Lieux"
+        },
+        {
+          "value": "FTL",
+          "label": "France Tiers Lieu"
+        },
+        {
           "value": "MSAP",
-          "label": "Maison de Service Au Public"
+          "label": "Maison de Services Au Public"
         },
         {
           "value": "MFS",
-          "label": "France Services"
+          "label": "Maison France Services"
         },
         {
-          "value": "EPN",
-          "label": "Espace Public Numérique"
+          "value": "NMM",
+          "label": "Nièvre médiation numérique"
         },
         {
-          "value": "TL",
-          "label": "Tiers lieu"
+          "value": "DM",
+          "label": "Réseau Dijon métropole"
         },
         {
-          "value": "",
-          "label": "Agrément + permanences CAF CPAM ..."
-        },
-        {
-          "value": "REL",
-          "label": "Structures relais Coll.in/RhinOcc"
-        },
-        {
-          "value": "TL-APTIC",
-          "label": "Tiers lieu - APTIC"
-        },
-        {
-          "value": "EPN-TL-APTIC",
-          "label": "Espace Public Numérique - Tiers lieu - APTIC"
+          "value": "RIN",
+          "label": "Réseau inclusion numérique Chalon-Louhans"
         }
       ]
     },
     {
-      "name": "codes_types_mediations",
+      "name": "code_accomp",
       "subtype": "tags",
-      "allowNew": true,
+      "bgColor": "#F0BE86",
       "tagSeparator": "-",
-      "bgColor": "#BED3C3",
       "definitions": [
         {
-          "value": "ORD",
-          "label": "Ordinateur en libre service"
+          "value": "A",
+          "label": "En autonomie"
         },
         {
-          "value": "ORDM",
-          "label": "Ordinateur avec médiateur.rice"
+          "value": "L",
+          "label": "Accès libre avec accompagnement"
         },
         {
-          "value": "REP",
-          "label": "Ateliers de réparation de matériel informatique"
+          "value": "RDV",
+          "label": "Accompagnement individuel sur rendez-vous"
         },
         {
-          "value": "FL",
-          "label": "FabLab"
+          "value": "G",
+          "label": "Accompagnement en groupe sur inscription"
         },
         {
-          "value": "W",
-          "label": "Espace de co-working"
-        },
-        {
-          "value": "ACCDS",
-          "label": "Accompagnement individuel accès aux droits simple"
-        },
-        {
-          "value": "ACCDA",
-          "label": "Accompagnement individuel approfondi accès aux droits"
-        },
-        {
-          "value": "SENS",
-          "label": "Sensibilisation autour du numérique"
-        },
-        {
-          "value": "ACCN",
-          "label": "Accompagnement individuel des actions uniquement numériques"
-        },
-        {
-          "value": "COMP",
-          "label": "Ateliers informatiques de montée en compétences"
-        },
-        {
-          "value": "PRO",
-          "label": "Formation numérique professionnalisante"
-        },
-        {
-          "value": "ENT",
-          "label": "Ateliers collectifs d’entraide autour du numérique"
+          "value": "R",
+          "label": "Atelier de réparation informatique"
         }
       ]
     },
     {
-      "name": "codes_publics",
-      "subtype": "tags",
-      "allowNew": true,
-      "tagSeparator": "-",
-      "bgColor": "#BED3C3",
-      "definitions": [
-        {
-          "value": "SEN",
-          "label": "Seniors"
-        },
-        {
-          "value": "J",
-          "label": "jeunes"
-        },
-        {
-          "value": "DE",
-          "label": "demandeur.se d’emploi"
-        },
-        {
-          "value": "AD",
-          "label": "adultes"
-        },
-        {
-          "value": "TP",
-          "label": "tout public"
-        },
-        {
-          "value": "ALL",
-          "label": "allocataire CAF"
-        },
-        {
-          "value": "ETR",
-          "label": "étranger"
-        }
-      ]
+      "name": "lundi matin"
     },
     {
-      "name": "codes_thematiques",
-      "subtype": "tags",
-      "allowNew": true,
-      "tagSeparator": "-",
-      "bgColor": "orange",
-      "definitions": [
-        {
-          "value": "MOB",
-          "label": "Mobilité"
-        },
-        {
-          "value": "SAN",
-          "label": "santé"
-        },
-        {
-          "value": "EM",
-          "label": "emploi"
-        },
-        {
-          "value": "FAM",
-          "label": "famille/parentalité"
-        },
-        {
-          "value": "FI",
-          "label": "finances"
-        },
-        {
-          "value": "LOG",
-          "label": "logement"
-        }
-      ]
+      "name": "lundi après-midi"
     },
     {
-      "name": "lat",
-      "hide": true
+      "name": "mardi matin"
     },
     {
-      "name": "lon",
-      "hide": true
+      "name": "mardi après-midi"
     },
     {
-      "name": "BAN_latitude",
-      "subtype": "geopoint"
+      "name": "mercredi matin"
     },
     {
-      "name": "BAN_longitude",
-      "subtype": "geopoint"
+      "name": "mercredi après-midi"
+    },
+    {
+      "name": "jeudi matin"
+    },
+    {
+      "name": "jeudi après-midi"
+    },
+    {
+      "name": "vendredi matin"
+    },
+    {
+      "name": "vendredi après-midi"
+    },
+    {
+      "name": "samedi matin"
+    },
+    {
+      "name": "samedi après-midi"
+    },
+    {
+      "name": "dimanche matin"
+    },
+    {
+      "name": "dimanche après-midi"
     }
   ],
   "consolidation": [
